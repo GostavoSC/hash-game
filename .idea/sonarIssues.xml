@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/HashGame.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/HashGameState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/MainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/compose/HashGameState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/compose/MainScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/ui/theme/Color.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/ui/theme/Theme.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/hbsis/wms/ambev/jogo_da_velha/utils/HashExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/hbsis/wms/ambev/jogo_da_velha/ExampleUnitTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/hbsis/wms/ambev/jogo_da_velha/MainViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/androidTest/java/hbsis/wms/ambev/finishedproductloading/core/presentation/compose/screens/TaskDetailsScreenKtTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/androidTest/java/hbsis/wms/ambev/finishedproductloading/rule/CustomDispatcher.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/LoadingApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/di/LoadingModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/domain/FinishedProductLoadingRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/domain/model/states/LoadingTaskState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/presentation/compose/components/LoadingAlertDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/presentation/compose/components/LoadingNavigation.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/presentation/compose/screens/TaskDetailsScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/presentation/main/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/core/presentation/main/MainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/service/PendingLoadsService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/service/ServiceMock.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/main/java/hbsis/wms/ambev/finishedproductloading/source/PendingLoadsRepositoryImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /app/src/test/java/hbsis/wms/ambev/finishedProductLoading/core/main/PendingLoadsViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../WMS/WMS - Finished Product Loading /azure-pipelines.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
