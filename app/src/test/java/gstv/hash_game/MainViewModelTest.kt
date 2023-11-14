@@ -1,14 +1,10 @@
 package gstv.hash_game
 
-import gstv.hash_game.MainViewModel
+import gstv.hash_game.compose.WinStates
 import io.kotest.matchers.shouldBe
 import org.junit.Test
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
+
 class MainViewModelTest {
     private val viewModel = MainViewModel()
 
@@ -20,7 +16,7 @@ class MainViewModelTest {
         viewModel.createPlay(1,3)//o
         viewModel.createPlay(3,3)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -32,7 +28,7 @@ class MainViewModelTest {
         viewModel.createPlay(2,1)//x
         viewModel.createPlay(3,3)//o
 
-        viewModel.hashState.value.winner shouldBe "O"
+        viewModel.hashState.value.winner shouldBe WinStates.O_WIN
     }
     @Test
     fun should_return_x_when_win_in_middle_2() {
@@ -42,7 +38,7 @@ class MainViewModelTest {
         viewModel.createPlay(1,3)//o
         viewModel.createPlay(3,1)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -54,7 +50,7 @@ class MainViewModelTest {
         viewModel.createPlay(2,1)//x
         viewModel.createPlay(3,1)//o
 
-        viewModel.hashState.value.winner shouldBe "O"
+        viewModel.hashState.value.winner shouldBe WinStates.O_WIN
     }
 
     @Test
@@ -65,7 +61,7 @@ class MainViewModelTest {
         viewModel.createPlay(3,2)//o
         viewModel.createPlay(1,3)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
     @Test
     fun should_return_X_when_win_in_middle_line() {
@@ -75,7 +71,7 @@ class MainViewModelTest {
         viewModel.createPlay(1,2)//o
         viewModel.createPlay(2,3)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -86,7 +82,7 @@ class MainViewModelTest {
         viewModel.createPlay(1,2)//o
         viewModel.createPlay(3,3)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -97,7 +93,7 @@ class MainViewModelTest {
         viewModel.createPlay(2,2)//o
         viewModel.createPlay(3,1)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -108,7 +104,7 @@ class MainViewModelTest {
         viewModel.createPlay(3,1)//o
         viewModel.createPlay(3,2)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 
     @Test
@@ -119,6 +115,6 @@ class MainViewModelTest {
         viewModel.createPlay(2,1)//o
         viewModel.createPlay(3,3)//x
 
-        viewModel.hashState.value.winner shouldBe "X"
+        viewModel.hashState.value.winner shouldBe WinStates.X_WIN
     }
 }

@@ -1,5 +1,6 @@
 package gstv.hash_game.compose
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,10 +20,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import gstv.hash_game.HashGame
 import gstv.hash_game.MainViewModel
+import gstv.hash_game.R
 import gstv.hash_game.theme.Line
 import gstv.hash_game.utils.getPlaysColumnOrEmpty
 import gstv.hash_game.utils.getPlaysLineOrEmpty
@@ -33,21 +36,18 @@ fun MainScreen(mainViewModel: MainViewModel, state: HashGameState) {
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colors.background
     ) {
-        if (state.showPopUp) {
+        AnimatedVisibility(state.showPopUp) {
+            val isTied = state.winner == WinStates.TIED
             AlertDialog(
                 title = {
-                    var text = "Parabéns!!!"
-                    if (state.winner == "empate") {
-                        text = "Vishhhhh"
-                    }
-                    Text(text = text)
+                    Text(
+                        text = if (isTied) stringResource(id = R.string.tied)
+                        else stringResource(id = R.string.congrats))
                 },
                 text = {
-                    var text = "O vencendor da rodada foi: ${state.winner}"
-                    if (state.winner == "empate") {
-                        text = "Empatou :("
-                    }
-                    Text(text = text)
+                    Text(
+                        text = if (isTied) WinStates.TIED.message
+                        else stringResource(id = R.string.the_winner_is, state.winner))
                 },
                 onDismissRequest = {
                     mainViewModel.clearGame()
@@ -80,21 +80,27 @@ private fun ScreenContent(
             .fillMaxWidth()
             .padding(top = 120.dp)
     ) {
-        Text(text = "É a vez do: $turn", fontSize = 25.sp)
+        Text(text = stringResource(R.string.is_turn_to, turn), fontSize = 25.sp)
         Spacer(modifier = Modifier.padding(top = 40.dp))
+
         LineGame(plays.getPlaysLineOrEmpty(1)) {
             onCreatePlay(1, it)
         }
-        Divider(color = Line, modifier = Modifier.size(height = 4.dp, width = 312.dp))
+        HorizontalLine()
         LineGame(plays.getPlaysLineOrEmpty(2)) {
             onCreatePlay(2, it)
         }
-        Divider(color = Line, modifier = Modifier.size(height = 4.dp, width = 312.dp))
+        HorizontalLine()
         LineGame(plays.getPlaysLineOrEmpty(3)) {
             onCreatePlay(3, it)
         }
 
     }
+}
+
+@Composable
+fun HorizontalLine() {
+    Divider(color = Line, modifier = Modifier.size(height = 4.dp, width = 312.dp))
 }
 
 @Composable
@@ -116,14 +122,19 @@ private fun LineGame(plays: List<HashGame>, onClickItem: (Int) -> Unit) {
     Row {
         ItemLine(plays = plays, column = 1, onClickItem = { onClickItem(it) })
 
-        Divider(color = Line, modifier = Modifier.size(height = 100.dp, width = 4.dp))
+        LateralLine()
 
         ItemLine(plays = plays, column = 2, onClickItem = { onClickItem(it) })
 
-        Divider(color = Line, modifier = Modifier.size(height = 100.dp, width = 4.dp))
+        LateralLine()
 
         ItemLine(plays = plays, column = 3, onClickItem = { onClickItem(it) })
     }
+}
+
+@Composable
+private fun LateralLine() {
+    Divider(color = Line, modifier = Modifier.size(height = 100.dp, width = 4.dp))
 }
 
 @Composable

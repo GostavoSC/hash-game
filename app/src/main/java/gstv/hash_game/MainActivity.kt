@@ -22,7 +22,6 @@ class MainActivity : ComponentActivity() {
             JogoDaVelhaTheme {
                 MainScreen(mainViewModel = viewModel, state = state)
             }
-            checkBluetooth()
         }
     }
 
