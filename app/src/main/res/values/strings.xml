@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Jogo da velha</string>
-    <string name="congrats">Parabéns!</string>
-    <string name="tied">Aff</string>
-    <string name="the_winner_is">O vencedor da rodada é o %1$d</string>
-    <string name="is_turn_to">É a vez do: %1$s</string>
-</resources>
